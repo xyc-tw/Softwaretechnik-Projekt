@@ -52,18 +52,21 @@ Das Projekt „Recipe Finder and Meal Planner“ wird im DevOps-Workflow entwick
 - Infrastruktur und Anwendungen sind vollständig in der Cloud integriert. 
 
 - **Cloud-Service-Vergleich**:
-|         | AWS | GCP |
-| ------- | ------- | ------- |
-| Identity and Access Management | AWS IAM (Identity and Access Management) | Google Cloud IAM |
-| Secrets Management | AWS Secrets Manager | Google Cloud Secret Manager |
-| Networking Services | Amazon VPC (Virtual Private Cloud), AWS Transit Gateway for interconnecting VPCs, Amazon Route 53 for DNS | Google Cloud VPC, Cloud DNS for DNS services |
-| Kubernetes Services | Amazon EKS (Elastic Kubernetes Service) | Google Kubernetes Engine (GKE) |
-| Compute Services| Amazon EC2 (Elastic Compute Cloud) | Google Compute Engine |
-| Container Registry | Amazon ECR (Elastic Container Registry) | Google Container Registry (GCR) |
-| Relational Databases | Amazon RDS (Relational Database Service) | Google Cloud SQL |
-| NoSQL Databases | Amazon DynamoDB | Google Cloud Firestore or Google Cloud Bigtable |
-| Object Storage | Amazon S3 (Simple Storage Service) | Google Cloud Storage (GCS) |
-| Monitoring and Logging | Amazon CloudWatch | Google Cloud Monitoring |
+|                                | AWS                                      | GCP                                      |
+|:------------------------------ |:---------------------------------------- |:---------------------------------------- |
+| Identity and Access Management | AWS IAM (Identity and Access Management) | Google Cloud IAM                         |
+| Secrets Management             | AWS Secrets Manager                      | Google Cloud Secret Manager              |
+| Networking Services            | Amazon VPC (Virtual Private Cloud),      | Google Cloud VPC,                        |
+|                                | AWS Transit Gateway for interconnecting  | Cloud DNS for DNS services               |
+|                                | VPCs, Amazon Route 53 for DNS            |                                          |
+| Kubernetes Services            | Amazon EKS (Elastic Kubernetes Service)  | Google Kubernetes Engine (GKE)           |
+| Compute Services               | Amazon EC2 (Elastic Compute Cloud)       | Google Compute Engine                    |
+| Container Registry             | Amazon ECR (Elastic Container Registry)  | Google Container Registry (GCR)          |
+| Relational Databases           | Amazon RDS (Relational Database Service) | Google Cloud SQL                         |
+| NoSQL Databases                | Amazon DynamoDB                          | Google Cloud Firestore or                |
+|                                |                                          | Google Cloud Bigtable                    |
+| Object Storage                 | Amazon S3 (Simple Storage Service)       | Google Cloud Storage (GCS)               |
+| Monitoring and Logging         | Amazon CloudWatch                        | Google Cloud Monitoring                  |
 
 - **Vereinfachte Version des Vergleichs**:
 | Option | Management Level | Control Over Infrastructure | Use Case |

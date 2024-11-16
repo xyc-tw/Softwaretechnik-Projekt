@@ -64,7 +64,8 @@ Beste Kombination für präzisen UI-Code. Locofy unterstützt Framework-Auswahl 
 --- 
 ### 4. Reflexion & Analyse
 - **Qualität des Outputs:** War der generierte Code funktional und gut strukturiert? Musstet ihr manuell eingreifen oder Fehler beheben?
-*Cursor > bolt.new > Figma+Locofy > Claude AI Artifacts*
+
+  *Cursor > bolt.new > Figma+Locofy > Claude AI Artifacts*
   - Claude AI Artifacts:
   Nur für kleine Projekte geeignet. Der generierte Code ist nicht direkt in ein Framework wie Next.js integrierbar und erfordert eine manuelle Anpassung. Unterstützt keine komplexen Layouts oder Designreferenzen.
   - Cursor:
@@ -75,7 +76,8 @@ Beste Kombination für präzisen UI-Code. Locofy unterstützt Framework-Auswahl 
   Der UI-Code ist hochwertig und folgt einem klaren Standard. Funktionalitäten müssen jedoch manuell ergänzt werden, was zu zusätzlichem Aufwand führen kann.
 
 - **Effizienz**: In welchen Bereichen hat das KI-Tool wirklich geholfen, und wo war es weniger nützlich?
-*Claude AI Artifacts = bolt.new > Cursor > Figma+Locofy*
+
+  *Claude AI Artifacts = bolt.new > Cursor > Figma+Locofy*
   - Claude AI Artifacts:
   Gut für schnelle Prototypen, aber nicht für größere Projekte geeignet. Die manuelle Nachbearbeitung nimmt Zeit in Anspruch.
   - Cursor:
@@ -86,7 +88,8 @@ Beste Kombination für präzisen UI-Code. Locofy unterstützt Framework-Auswahl 
   Sehr effizient für die UI-Entwicklung, da Design-to-Code-Transformationen in Minuten erfolgen können. Für die funktionale Implementierung ist jedoch zusätzlicher Aufwand erforderlich.
 
 - **Verständlichkeit**: Habet ihr den generierten Code vollständig verstanden? Könnt ihr ihn manuell modifizieren, falls nötig?
-*Cursor = bolt.new > Claude AI Artifacts > Figma+Locofy*
+
+  *Cursor = bolt.new > Claude AI Artifacts = Figma+Locofy*
   - Claude AI Artifacts:
   Der generierte Code ist minimalistisch, was ihn einfach macht, aber die Integration in ein komplexeres Projekt erschwert.
   - Cursor:
@@ -97,7 +100,8 @@ Beste Kombination für präzisen UI-Code. Locofy unterstützt Framework-Auswahl 
   Der generierte UI-Code ist präzise und nachvollziehbar. Funktionale Erweiterungen müssen jedoch tiefergehendes Verständnis erfordern.
 
 - **Grenzen des Tools**: Gab es Bereiche, in denen das KI-Tool versagt hat? Wenn ja, warum?
-*Cursor > Bolt.new > Figma+Locofy = Claude AI Artifacts*
+
+  *Cursor > Bolt.new > Figma+Locofy = Claude AI Artifacts*
   - Claude AI Artifacts:
   Kann keine komplexen Projektstrukturen erzeugen und unterstützt keine Layout-Bilder. Die Vorschau ist auf einfache Seiten beschränkt.
   - Cursor:

@@ -25,7 +25,7 @@ Die Werkzeuge wurden nach Funktionalität in folgende Kategorien eingeteilt:
 | Cursor                  | IDE ohne Live-Vorschau. Cursor Composer ermöglicht die autonomie Bearbeitung über mehrere Dateien hinweg.  | VSCode + GitHub Copilot |
 | bolt.new                | Bietet Live-Vorschau und eine Online-IDE. Vereint Code-Generierung und -Modifikation.                      | Replit Agent            |
 |                                                                  *Aus der Perspektive der Designer*                                                          |||
-| Figma + Locofy + Cursor | Wandelt Design in Code um und ergänzt die Funktionalität mithilfe von Cursor.                              | builder.io              |
+| Figma + Locofy          | Wandelt Design in Code um und ergänzt die Funktionalität mithilfe von Cursor.                              | builder.io              |
 
 ---      
 ### 3. Durchführung:
@@ -65,14 +65,14 @@ Beste Kombination für präzisen UI-Code. Locofy unterstützt Framework-Auswahl 
 ### 4. Reflexion & Analyse
 - **Qualität des Outputs:** War der generierte Code funktional und gut strukturiert? Musstet ihr manuell eingreifen oder Fehler beheben?
 
-  *Cursor > bolt.new > Figma+Locofy > Claude AI Artifacts*
+  *Cursor = bolt.new > Claude AI Artifacts > Figma+Locofy*
   - Claude AI Artifacts:
   Nur für kleine Projekte geeignet. Der generierte Code ist nicht direkt in ein Framework wie Next.js integrierbar und erfordert eine manuelle Anpassung. Unterstützt keine komplexen Layouts oder Designreferenzen.
   - Cursor:
   Liefert funktionalen und gut strukturierten Code. Besonders hilfreich bei der Bearbeitung und Organisation komplexer Projekte durch automatische Dateistrukturierung. Die Implementierung von Designreferenzen bleibt jedoch begrenzt.
   - Bolt.new:
   Kombiniert Vorschau und Bearbeitung in einer Umgebung. Der generierte Code ist funktionsfähig, jedoch nicht immer optimal dokumentiert.
-  - Figma + Locofy + Cursor:
+  - Figma + Locofy:
   Der UI-Code ist hochwertig und folgt einem klaren Standard. Funktionalitäten müssen jedoch manuell ergänzt werden, was zu zusätzlichem Aufwand führen kann.
 
 - **Effizienz**: In welchen Bereichen hat das KI-Tool wirklich geholfen, und wo war es weniger nützlich?
@@ -84,20 +84,20 @@ Beste Kombination für präzisen UI-Code. Locofy unterstützt Framework-Auswahl 
   Sehr effizient, insbesondere durch die automatische Organisation von Dateien und die Möglichkeit, mehrere Dateien gleichzeitig zu bearbeiten.
   - Bolt.new:
   Unterstützt effizientes Arbeiten durch die Integration von Vorschau und Modifikation, allerdings nicht so flexibel wie Cursor.
-  - Figma + Locofy + Cursor:
+  - Figma + Locofy:
   Sehr effizient für die UI-Entwicklung, da Design-to-Code-Transformationen in Minuten erfolgen können. Für die funktionale Implementierung ist jedoch zusätzlicher Aufwand erforderlich.
 
 - **Verständlichkeit**: Habet ihr den generierten Code vollständig verstanden? Könnt ihr ihn manuell modifizieren, falls nötig?
 
-  *Cursor = bolt.new > Claude AI Artifacts = Figma+Locofy*
+  *Cursor = bolt.new > Figma+Locofy > Claude AI Artifacts*
   - Claude AI Artifacts:
   Der generierte Code ist minimalistisch, was ihn einfach macht, aber die Integration in ein komplexeres Projekt erschwert.
   - Cursor:
   Die Arbeit ist schrittweise gut dokumentiert und leicht verständlich. Selbst Anfänger können sie mit geringem Aufwand nachvollziehen und bearbeiten.
   - Bolt.new:
   Die Arbeit ist schrittweise gut dokumentiert und leicht verständlich. Selbst Anfänger können sie mit geringem Aufwand nachvollziehen und bearbeiten.
-  - Figma + Locofy + Cursor:
-  Der generierte UI-Code ist präzise und nachvollziehbar. Funktionale Erweiterungen müssen jedoch tiefergehendes Verständnis erfordern.
+  - Figma + Locofy:
+  Der generierte UI-Code ist präzise und nachvollziehbar. Interaktionen können in Locofy integriert werden, jedoch erfordern funktionale Erweiterungen ein tiefergehendes Verständnis.
 
 - **Grenzen des Tools**: Gab es Bereiche, in denen das KI-Tool versagt hat? Wenn ja, warum?
 
@@ -108,7 +108,7 @@ Beste Kombination für präzisen UI-Code. Locofy unterstützt Framework-Auswahl 
   Layout-Bilder werden nicht präzise übernommen. Außerdem ist die Einrichtung eines Projekts ohne vorgefertigte Struktur zeitaufwändiger.
   - Bolt.new:
   Die Vorschau ist nützlich, jedoch gibt es Einschränkungen bei der Verarbeitung von Design-Referenzen sowie Schwierigkeiten und Instabilitäten in der Online-IDE, insbesondere beim Hochladen von Dateien.
-  - Figma + Locofy + Cursor:
+  - Figma + Locofy:
   UI-Elemente werden gut umgesetzt, aber komplexere Interaktionen oder Funktionen müssen manuell ergänzt werden.
 
 --- 
@@ -119,7 +119,7 @@ Basierend auf eurer Erfahrung, bewertet den Nutzen des verwendeten KI-Tools für
   - Claude AI Artifacts: Ideal für schnelle Prototypen oder einfache Projekte, die keine komplexen Anforderungen haben. Nicht für Frameworks wie Next.js geeignet.
   - Cursor: Sehr gut für Entwickler, die auf Effizienz und Code-Strukturierung Wert legen. Empfohlen für Projekte, die komplexe Logik erfordern.
   - Bolt.new: Vereint Effizienz und Vorschau, ideal für schnelle und dennoch komplexe Prototypen.
-  - Figma + Locofy + Cursor: Perfekt für Designer, die Design-to-Code benötigen. Für Projekte, die UI- und Funktionalitätsentwicklung kombinieren, ist diese Kombination ideal.
+  - Figma + Locofy: Perfekt für Designer, die Design-to-Code benötigen. Für Projekte, die UI- und Funktionalitätsentwicklung kombinieren, ist diese Kombination ideal.
 
 - **In welchen Fällen wäre eine manuelle Herangehensweise vorzuziehen?**
   - Wenn genaue Layout-Details oder benutzerdefinierte Funktionen benötigt werden, die von den Tools nicht korrekt umgesetzt werden.

@@ -1,5 +1,8 @@
 # IT-Konzept für das DevOps-Projekt: Recipe Finder and Meal Planner
 
+## Verwendete Repositories:
+- [App(Next.js) Repository](https://github.com/xyc-tw/habit-tracker-app/tree/main)  
+
 ## Projektübersicht
 
 ### Hintergrund
@@ -10,11 +13,21 @@ Die Implementierung unserer Prototypen gestaltet sich dadurch oft weniger effizi
 Mein Ziel für diesen Kurs ist es daher, die Konzepte von DevOps umfassender zu verstehen und praktische Erfahrungen zu sammeln. Diese Kenntnisse sollen mir nicht nur die Kommunikation mit dem DevOps-Team erleichtern, sondern auch ermöglichen, im Data-Science-Team aktiver und effektiver mitzuwirken.
 
 ### Projektidee
-Das Projekt „Recipe Finder and Meal Planner“ wird im DevOps-Workflow entwickelt.
+Das Projekt „Habit Tracker“ wird im DevOps-Workflow entwickelt.
 
-- **Idee**: Eine Website, auf der Benutzer Rezepte suchen und wöchentliche Mahlzeitenpläne basierend auf den verfügbaren Zutaten erstellen können.
-- **Funktionen**: Rezeptsuche, Zutatenfilterung, Mahlzeitenplaner, Einkaufsliste-Generator und Nährwertinformationen.
-- **Zielgruppe**: Hobbyköche, beschäftigte Familien und gesundheitsbewusste Personen.
+- **Idee**: Eine Website, auf der Benutzer ihre Ziele setzen und dokumentieren können.
+
+- **Funktionen**:
+  - Erstellung und Verwaltung von individuellen Zielen.
+  - Fortschrittsanzeige mit Statistiken und Diagrammen.
+  - Erinnerungsfunktion zur Unterstützung der Zielerreichung.
+  - Gemeinschaftsbereiche für Motivation und Austausch.
+  - Integration von Belohnungssystemen für erreichte Meilensteine.
+
+- **Zielgruppe**:
+  - Menschen, die persönliche oder berufliche Gewohnheiten entwickeln möchten.
+  - Nutzer, die ihren Fortschritt bei Zielen verfolgen und verbessern wollen.
+  - Personen, die digitale Tools für Selbstorganisation und Motivation bevorzugen.
 
 ### Projektstruktur
 ![Projektstruktur](images/projektstruktur.png)

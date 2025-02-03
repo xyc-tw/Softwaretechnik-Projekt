@@ -62,6 +62,7 @@ Das Projekt „Habit Tracker“ wird im DevOps-Workflow entwickelt.
 ## Local-Bedarf
 - ** Before deploy the project to the cloud, run the architecture locally for learning and testing
 ### Full local setup architecture
+```
 +----------------------------------------------------+
 |                  Kubernetes Cluster                |
 |                (Minikube/Kind, Local)              |
@@ -77,17 +78,18 @@ Das Projekt „Habit Tracker“ wird im DevOps-Workflow entwickelt.
 |          |   ArgoCD   |    | Local HTTP/HTTPS |    |
 |          +------------+    +------------------+    |
 +----------------------------------------------------+
+```
 
 ### Technologies for Local Setup Compatible with Cloud
 
-| Component          | Local Technology	                | Future Cloud Technology              |
+| Component          | Local Technology	                  | Future Cloud Technology              |
 |:-------------------|:---------------------------------- |: ----------------------------------- |
 | Containerization   | Docker	                            | Docker (for building images)         |
-| Orchestration      | Minikube/Kind	                   | Kubernetes (EKS/GKE)                 |
-| Networking	      | Docker network, Minikube ingress   | VPC, Load Balancers, Ingress         |
+| Orchestration      | Minikube/Kind	                    | Kubernetes (EKS/GKE)                 |
+| Networking	       | Docker network, Minikube ingress   | VPC, Load Balancers, Ingress         |
 | Database	         | Local PostgreSQL Docker container  |	RDS (PostgreSQL)                     |
-| CI/CD	            | Local Jenkins, ArgoCD	             | Cloud-hosted Jenkins, ArgoCD in K8s  |
-| Secrets Management | .env files or Docker secrets	    | AWS Secrets Manager or K8s Secrets   |
+| CI/CD	             | Local Jenkins, ArgoCD	            | Cloud-hosted Jenkins, ArgoCD in K8s  |
+| Secrets Management | .env files or Docker secrets	      | AWS Secrets Manager or K8s Secrets   |
 
 ## Cloud-Bedarf
 

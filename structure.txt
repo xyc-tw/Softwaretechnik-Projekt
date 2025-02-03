@@ -1,0 +1,26 @@
+habit-tracker/
+│
+├── repo: Softwaretechnik-Projekt 
+│
+├── repo: habit-tracker-infra/    # Infrastructure code repository
+│   ├── terraform/                # Terraform configuration
+│   │   ├── main.tf               # Terraform entry point where all resources are defined and modules are called
+│   │   ├── variables.tf          # Input variables, Defines what variables exist and provides optional defaults.
+│   │   ├── outputs.tf            # Defines outputs to expose data (e.g., EKS cluster name, ECR URL)
+│   │   ├── terraform.tfvars      # Value assignments for variables
+│   ├── ansible/                  # Ansible playbooks and configuration
+│   │   ├── playbooks.yml
+│   │   ├── inventories.ini
+│   │   └── roles/                # Ansible roles (e.g., Docker, Kubernetes, Helm)
+│   ├── deploy.sh
+│   └-─ README.md 
+│ 
+└── repo: habit-tracker-app/      # Application code repository (Next.js, Dockerfiles, etc.)
+    ├── frontend/                 # Frontend part of the app
+    ├── backend/                  # Backend part of the app (API, services)
+    ├── Dockerfile                # Dockerfile for building and deploying app
+    ├── k8s/                      # Kubernetes manifests (deployments, services, etc.)
+    │   ├── deployment.yaml       # Deployment definition
+    │   ├── service.yaml          # Service for exposing app
+    │   └── ingress.yaml          # Ingress for routing
+    └── README.md 

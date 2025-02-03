@@ -1,7 +1,8 @@
-# IT-Konzept für das DevOps-Projekt: Recipe Finder and Meal Planner
+# IT-Konzept für das DevOps-Projekt: Habit Tracker
 
 ## Verwendete Repositories:
 - [App(Next.js) Repository](https://github.com/xyc-tw/habit-tracker-app/tree/main)  
+- [Infrastructure Repository](https://github.com/xyc-tw/habit-tracker-infra) 
 
 ## Projektübersicht
 
@@ -31,6 +32,7 @@ Das Projekt „Habit Tracker“ wird im DevOps-Workflow entwickelt.
 
 ### Projektstruktur
 ![Projektstruktur](images/projektstruktur.png)
+![AWS-Infrastruktur](images/aws-infrastructure.jpg)
 
 ## Systemkomponenten
 
@@ -38,27 +40,54 @@ Das Projekt „Habit Tracker“ wird im DevOps-Workflow entwickelt.
 - Keine spezifische Hardware erforderlich (Cloud-basiertes Projekt).
   
 ### Software
-- **Frontend**: HTML / CSS / javascript oder React (mit Dockerfile konfiguriert)
-- **Backend**: Python (mit Dockerfile konfiguriert)
+- **App(Frontend/Backend)**: Nextjs
 - **Infrastruktur-Management**: Terraform und Ansible zur Verwaltung der Infrastruktur
 - **CI/CD**: Jenkins und ArgoCD
 - **Monitoring und Analysen**: Grafana und Metabase 
 - **Cloud**: AWS oder GCP
 
 ### Quellsysteme
-- **Frontend-Repository**: GitHub Repository für die Benutzeroberfläche mit Docker-Konfiguration.
-- **Backend-Repository**: GitHub Repository für den Backend-Service mit Docker-Konfiguration.
+- **App-Repository**: GitHub Repository für die Benutzeroberfläche und den Backend-Service mit Docker-Konfiguration.
 - **Infra-Repository**: GitHub Repository für Terraform-Code und Ansible-Skripte zur Bereitstellung der Infrastruktur.
 - **K8s-Repository**: GitHub Repository für Kubernetes Manifeste, Helm Charts und Konfigurationsdateien.
-- **CI/CD Repository**: GitHub Repository zur Verwaltung von Jenkins für CI/CD-Konfigurationen.
+- **Jenkins Repository**: GitHub Repository zur Verwaltung von Jenkins für CI/CD-Konfigurationen.
+- **ArgoCD Repository**: GitHub Repository zur Verwaltung von Jenkins für CI/CD-Konfigurationen.
 
 
 ## Netzwerkkonzept
-
 - **Technikraum und Hardware**: Keine physische Hardware erforderlich, da es sich um Cloud-Dienste handelt.
 - **VPC und Subnetze**: VPC wird für private Netzwerke und sichere Datenübertragung eingerichtet.
 - **IP-Adressen und Firewall**: IP-Adressen und Firewalls über AWS VPC und Subnetze verwaltet.
 
+## Local-Bedarf
+- ** Before deploy the project to the cloud, run the architecture locally for learning and testing
+### Full local setup architecture
++----------------------------------------------------+
+|                  Kubernetes Cluster                |
+|                (Minikube/Kind, Local)              |
+|                                                    |
+|  +------------+   +------------+   +------------+  |
+|  |  Next.js   |   | PostgreSQL |   |   Jenkins  |  |
+|  |   Pod      |   |   Pod      |   |   Pod      |  |
+|  +------------+   +------------+   +------------+  |
+|      |                  |               |          |
+|      +------------------+---------------+----------+
+|             |               Ingress (NGINX)        |
+|          +------------+    +------------------+    |
+|          |   ArgoCD   |    | Local HTTP/HTTPS |    |
+|          +------------+    +------------------+    |
++----------------------------------------------------+
+
+### Technologies for Local Setup Compatible with Cloud
+
+| Component          | Local Technology	                | Future Cloud Technology              |
+|:-------------------|:---------------------------------- |: ----------------------------------- |
+| Containerization   | Docker	                            | Docker (for building images)         |
+| Orchestration      | Minikube/Kind	                   | Kubernetes (EKS/GKE)                 |
+| Networking	      | Docker network, Minikube ingress   | VPC, Load Balancers, Ingress         |
+| Database	         | Local PostgreSQL Docker container  |	RDS (PostgreSQL)                     |
+| CI/CD	            | Local Jenkins, ArgoCD	             | Cloud-hosted Jenkins, ArgoCD in K8s  |
+| Secrets Management | .env files or Docker secrets	    | AWS Secrets Manager or K8s Secrets   |
 
 ## Cloud-Bedarf
 
@@ -148,8 +177,9 @@ Das Projekt wird in neun Schritten geplant und schrittweise in der angegebenen R
 - [1. Projektübersicht](#projektübersicht)
 - [2. Systemkomponenten](#systemkomponenten)
 - [3. Netzwerkkonzept](#netzwerkkonzept)
-- [4. Cloud-Bedarf](#cloud-bedarf)
-- [5. Betriebskonzept](#betriebskonzept)
-- [6. Support](#support)
-- [7. Bedienoberflächen](#bedienoberflächen)
-- [8. Projektplan](#projektplan)
+- [4. Local-Bedarf](#local-bedarf)
+- [5. Cloud-Bedarf](#cloud-bedarf)
+- [6. Betriebskonzept](#betriebskonzept)
+- [7. Support](#support)
+- [8. Bedienoberflächen](#bedienoberflächen)
+- [9. Projektplan](#projektplan)
